@@ -55,7 +55,7 @@ class RemoteConfigActivity : AppCompatActivity() {
                         // Handle fetch error
                     }
                 }
-        git}
+        }
             remoteConfig.addOnConfigUpdateListener(object : ConfigUpdateListener {
                 override fun onUpdate(configUpdate : ConfigUpdate) {
                     Log.d(TAG, "Updated keys: " + configUpdate.updatedKeys);
