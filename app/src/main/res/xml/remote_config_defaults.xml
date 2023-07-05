@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>remote_text</key>
+        <value>Default Text</value>
+    </entry>
+    <entry>
+        <key>realtime_text</key>
+        <value>Default Text</value>
+    </entry>
+
+</defaultsMap>

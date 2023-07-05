@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "301411047878",
+    "project_id": "mytoolamd",
+    "storage_bucket": "mytoolamd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301411047878:android:f9566769a8b1fb2b90bac7",
+        "android_client_info": {
+          "package_name": "com.android.mytoolamd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301411047878-1hc6nko1lea7sb7dhtrp57r46d7ipgj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClbS5wDNJalb4WRjw19_Rs_zwb-oCHb4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301411047878-1hc6nko1lea7sb7dhtrp57r46d7ipgj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
