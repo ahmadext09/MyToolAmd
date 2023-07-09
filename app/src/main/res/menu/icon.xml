@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/bottomNavHomeFragment"
+            android:icon="@drawable/ic_home_retina"
+            android:iconTint="@color/white"
+
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/bottomNavPointFragment"
+            android:icon="@drawable/ic_point_retina"
+            android:iconTint="@color/white"
+            android:title="Points"/>
+        <item
+            android:id="@+id/bottomNavOrderFragment"
+            android:icon="@drawable/ic_order_retina"
+            app:iconTint="@color/white"
+            android:title="Orders"/>
+
+        <item
+            android:id="@+id/bottomNavProfileFragment"
+            android:background="@drawable/ic_user_retina"
+            app:iconTint="@color/white"
+            android:title="Profile"/>
+
+    </menu>
+

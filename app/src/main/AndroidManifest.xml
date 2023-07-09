@@ -25,10 +25,13 @@
         android:theme="@style/Theme.MyToolAmd"
         tools:targetApi="31">
         <activity
-            android:name=".RemoteConfigActivity"
+            android:name=".activity.BottomNavActivity"
             android:exported="false" />
         <activity
-            android:name=".ShareImageUrlActivity"
+            android:name=".activity.RemoteConfigActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ShareImageUrlActivity"
             android:exported="false" />
 
         <provider
@@ -41,14 +44,22 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
+        <receiver
+            android:name=".receiver.NotificationClickReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="NOTIFICATION_CLICKED_ACTION" />
+            </intent-filter>
+        </receiver>
+
         <service
-            android:name=".InactivityCheckWorker"
+            android:name=".utility.InactivityCheckWorker"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE"
             tools:ignore="Instantiatable" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

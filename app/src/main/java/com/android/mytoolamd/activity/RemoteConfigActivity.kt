@@ -1,4 +1,4 @@
-package com.android.mytoolamd
+package com.android.mytoolamd.activity
 
 import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import com.android.mytoolamd.R
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.*
 import com.google.firebase.remoteconfig.ktx.remoteConfig
@@ -49,8 +50,8 @@ class RemoteConfigActivity : AppCompatActivity() {
             remoteConfig.fetchAndActivate()
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        val textValue = remoteConfig.getString("remote_text")
-                        textView.text = textValue
+                        val texture1= remoteConfig.getString("remote_text")
+                        textView.text = texture1
                     } else {
                         // Handle fetch error
                     }

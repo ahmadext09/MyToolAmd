@@ -9,4 +9,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="btnclr">#ADC778</color>
     <color name="mainbackgr">#DEF1EE</color>
+    <color name="unselect">#F6F4EE</color>
+    <color name="icon_tint">#FDF4F5</color>
+    <color name="circularimg">#C4C4C4</color>
+    <color name="frameclr">#EFEFEF</color>
+    <color name="gradient_top">#FEDA77</color>
+    <color name="gradient_second">#F58529</color>
+    <color name="gradient_center">#DD2A7B</color>
+    <color name="gradient_four">#8134AF</color>
+    <color name="gradient_last">#515BD4</color>
 </resources>

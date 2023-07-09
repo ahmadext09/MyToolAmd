@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/retina_nav_graph"
+    app:startDestination="@id/bottomNavHomeFragment">
+
+    <fragment
+        android:id="@+id/bottomNavHomeFragment"
+        android:name="com.android.mytoolamd.fragment.BottomNavHomeFragment"
+        android:label="fragment_bottom_nav_home"
+        tools:layout="@layout/fragment_bottom_nav_home" />
+    <fragment
+        android:id="@+id/bottomNavOrderFragment"
+        android:name="com.android.mytoolamd.fragment.BottomNavOrderFragment"
+        android:label="fragment_bottom_nav_order"
+        tools:layout="@layout/fragment_bottom_nav_order" />
+    <fragment
+        android:id="@+id/bottomNavPointFragment"
+        android:name="com.android.mytoolamd.fragment.BottomNavPointFragment"
+        android:label="fragment_bottom_nav_point"
+        tools:layout="@layout/fragment_bottom_nav_point" />
+    <fragment
+        android:id="@+id/bottomNavProfileFragment"
+        android:name="com.android.mytoolamd.fragment.BottomNavProfileFragment"
+        android:label="fragment_bottom_nav_profile"
+        tools:layout="@layout/fragment_bottom_nav_profile" />
+</navigation>

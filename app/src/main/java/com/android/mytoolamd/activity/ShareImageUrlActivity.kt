@@ -1,4 +1,4 @@
-package com.android.mytoolamd
+package com.android.mytoolamd.activity
 
 import android.content.Intent
 import android.graphics.Bitmap
@@ -10,6 +10,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.core.content.FileProvider
+import com.android.mytoolamd.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.target.CustomTarget

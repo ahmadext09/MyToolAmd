@@ -4,10 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1365" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/drawable/bottom_selector.xml" value="0.2725" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/drawable/ic_home_retina.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1365" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/drawable/ic_order_retina.xml" value="0.2725" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/drawable/ic_point_retina.xml" value="0.2725" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/drawable/ic_user_retina.xml" value="0.2725" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/layout/activity_bottom_nav.xml" value="0.28229166666666666" />
         <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/layout/activity_main.xml" value="0.12604166666666666" />
         <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/layout/activity_remote_config.xml" value="0.28229166666666666" />
         <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/layout/activity_share_image_url.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/layout/fragment_bottom_nav_home.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/layout/fragment_bottom_nav_order.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/layout/fragment_bottom_nav_point.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/layout/fragment_bottom_nav_profile.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/menu/icon.xml" value="0.28125" />
         <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/xml/file_paths.xml" value="0.12604166666666666" />
         <entry key="..\:/Users/Ahmad/AndroidStudioProjects/MyToolAmd/app/src/main/res/xml/remote_config_default.xml" value="0.28229166666666666" />
       </map>

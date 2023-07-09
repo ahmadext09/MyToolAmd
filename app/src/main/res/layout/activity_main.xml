@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainbackgr"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -58,6 +58,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/share_url_btn"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_nav_btn"
+            android:text="bottom_nav_activity"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/btnclr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/remote_config_btn"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
