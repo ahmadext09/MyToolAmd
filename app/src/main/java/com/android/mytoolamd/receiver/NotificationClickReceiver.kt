@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 import com.android.mytoolamd.activity.MainActivity
+import com.android.mytoolamd.utility.AppConstants
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.analytics.ktx.logEvent
@@ -18,7 +19,7 @@ class NotificationClickReceiver : BroadcastReceiver() {
         if (intent?.action == "NOTIFICATION_CLICKED_ACTION") {
             val notificationId = intent?.getIntExtra("notification_Id",0)
             Log.e("notificationBroadcastReceiver_notification_id", "$notificationId")
-            if (notificationId == 1) {
+            if (notificationId == AppConstants.NOTIFICATION_ID) {
                 Log.e("notificationBroadcastReceiver", "notification clicked")
 //                val firebaseAnalytics = FirebaseAnalytics.getInstance(context!!)
 //                val bundle = Bundle()
@@ -43,3 +44,8 @@ class NotificationClickReceiver : BroadcastReceiver() {
         }
     }
 
+//<service
+//android:name=".utility.InactivityCheckWorker"
+//android:exported="false"
+//android:permission="android.permission.BIND_JOB_SERVICE"
+//tools:ignore="Instantiatable" />

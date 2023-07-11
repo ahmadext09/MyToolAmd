@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var sharedPreferences: SharedPreferences
 
     companion object {
-        private const val WORK_TAG = "notification_work"
-        private const val WORK_NAME = "notification_work"
+
 
         //   private const val INACTIVE_NOTIFICATION__REPETE_INTERVAL:Long = 15
         var lastUsageTime: Long = 0
@@ -74,7 +73,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         // Cancel any existing work requests
         Log.e("on alert", "entered on resume")
-        workManager.cancelAllWorkByTag(WORK_TAG)
+        workManager.cancelAllWorkByTag(AppConstants.WORK_TAG)
 
     }
 
@@ -101,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 
         // Enqueue unique work with a unique name to prevent duplicate work requests
         workManager.enqueueUniquePeriodicWork(
-            WORK_NAME,
+            AppConstants.WORK_NAME,
             ExistingPeriodicWorkPolicy.REPLACE,
             notificationWorkRequest
         )

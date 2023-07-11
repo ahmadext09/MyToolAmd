@@ -1,7 +1,7 @@
 package com.android.mytoolamd.utility
 
 
-    import android.annotation.SuppressLint
+
     import android.app.NotificationChannel
     import android.app.NotificationManager
     import android.app.PendingIntent
@@ -30,7 +30,7 @@ class InactivityCheckWorker(context: Context, params: WorkerParameters) :
         applicationContext.getSharedPreferences("MySharedPreferences", Context.MODE_PRIVATE)
     var lastUsageTime = sharedPreferences.getLong("lastUsageTime", 0)
 
-    @SuppressLint("LaunchActivityFromNotification")
+
     override suspend fun doWork(): Result {
         // Create and display the notification
         //var lastUsageTime = MainActivity.lastUsageTime
@@ -53,7 +53,7 @@ class InactivityCheckWorker(context: Context, params: WorkerParameters) :
                     action = "NOTIFICATION_CLICKED_ACTION"
 
                 }
-            clickIntent.putExtra("notification_Id", NOTIFICATION_ID)
+            clickIntent.putExtra("notification_Id", AppConstants.NOTIFICATION_ID)
             val pendingIntent = PendingIntent.getBroadcast(
                 applicationContext,
                 0,
@@ -66,6 +66,7 @@ class InactivityCheckWorker(context: Context, params: WorkerParameters) :
                 .setContentTitle(AppConstants.INACTIVE_NOTIFICATION_TITLE)
                 .setContentText(AppConstants.INACTIVE_NOTIFICATION_PROMPT)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setStyle(NotificationCompat.BigTextStyle().bigText(AppConstants.INACTIVE_NOTIFICATION_PROMPT))
                 .setContentIntent(pendingIntent)
 
                 .setAutoCancel(true)
@@ -74,7 +75,7 @@ class InactivityCheckWorker(context: Context, params: WorkerParameters) :
             // Log a message when the user clicks the notification
 
             with(NotificationManagerCompat.from(applicationContext)) {
-                notify(NOTIFICATION_ID, notificationBuilder.build())
+                notify(AppConstants.NOTIFICATION_ID, notificationBuilder.build())
 
             }
             //   lastUsageTime=System.currentTimeMillis()
@@ -104,8 +105,7 @@ class InactivityCheckWorker(context: Context, params: WorkerParameters) :
 
     companion object {
         private const val CHANNEL_ID = "app_inactive_channel"
-        private const val NOTIFICATION_ID = 1
-        // private const val INACTIVITY_THRESHOLD = 45 * 60 * 1000
+    // private const val INACTIVITY_THRESHOLD = 45 * 60 * 1000
         //  private const val INACTIVE_NOTIFICATION_TITLE ="App Inactive"
     }
 
